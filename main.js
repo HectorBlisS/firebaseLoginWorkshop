@@ -7,6 +7,8 @@ let profileCard = document.querySelector('.profile-card')
 //inputs
 let loginEmailInput = document.querySelector("#login-email-input")
 let loginPassInput = document.querySelector("#login-pass-input")
+// EJERCICIO 4
+let cityInput = document.querySelector('#city')
 
 let signupEmailInput = document.querySelector("#signup-email-input")
 let signupPassInput = document.querySelector("#signup-pass-input")

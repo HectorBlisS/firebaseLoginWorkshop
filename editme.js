@@ -21,6 +21,9 @@ let isLogged = false
 // EJERCICIO 3
 let db = firebase.firestore()
 
+//EJERCICIO 4
+let uid
+
 //functions
 // EJERCICIO 1
 function loginWithGoogle() {
@@ -35,10 +38,12 @@ function loginWithGoogle() {
 
 // EJERCICIO 1
 function displayProfile({ user }) {
+    console.log(user)
     isLogged = true
     email.innerHTML = user.email
     photoURL.src = user.photoURL
     displayName.innerHTML = user.displayName
+    cityInput.value = user.city
     loginCard.remove()
     signupCard.remove()
     container.appendChild(profileCard)
@@ -46,9 +51,16 @@ function displayProfile({ user }) {
 
 //EJERCICIO2
 function checkLogin(user) {
-    if (user) {
-        displayProfile({ user })
-    }
+    if (!user) return
+    uid = user.uid
+    //EJERCICIO 4
+    db.collection('users').doc(user.uid).get()
+        .then(docSnap => {
+
+            displayProfile({ user: docSnap.data() })
+
+        })
+
 }
 
 // EJERCICIO 3
@@ -67,6 +79,14 @@ function saveData(user) {
 
 }
 
+// EJERCICIO 4 
+function updateProfile() {
+    // must be object
+    // Merge the data, no overwrite
+    let value = cityInput.value
+    db.collection('users').doc(uid).set({ city: value }, { merge: true })
+}
+
 
 //helpers
 
@@ -79,3 +99,6 @@ googleButtons.forEach(b => b.addEventListener('click', loginWithGoogle))
 //EJERCICIO 2
 auth.onAuthStateChanged(checkLogin)
 // start
+
+// EJERCICIO 4 
+cityInput.addEventListener('keyup', updateProfile)
