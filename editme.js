@@ -39,6 +39,13 @@ function displayProfile({ user }) {
     container.appendChild(profileCard)
 }
 
+//EJERCICIO2
+function checkLogin(user) {
+    if (user) {
+        displayProfile({ user })
+    }
+}
+
 
 //helpers
 
@@ -47,4 +54,7 @@ function displayProfile({ user }) {
 // EJERCICIO 1
 googleButtons.forEach(b => b.addEventListener('click', loginWithGoogle))
 
+
+//EJERCICIO 2
+auth.onAuthStateChanged(checkLogin)
 // start

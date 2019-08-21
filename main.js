@@ -55,6 +55,9 @@ function showError(value) {
 function logOut() {
     profileCard.remove()
     toggleCards()
+    // EJERCICIO2
+    // firebase 
+    firebase.auth().signOut()
 }
 
 
