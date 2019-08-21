@@ -76,8 +76,8 @@ logoutButton.addEventListener('click', logOut)
 
 // begining
 signupCard.remove()
-//loginCard.remove()
-profileCard.remove()
+loginCard.remove()
+//profileCard.remove()
 
 
 

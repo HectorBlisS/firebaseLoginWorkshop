@@ -1,6 +1,6 @@
-//other file variables and funcs: 
-/** 
- googleButtons 
+//other file variables and funcs:
+/**
+ googleButtons
  logoutButton
  toggleCards
  showError
@@ -16,16 +16,17 @@
 
 // globals 
 // EJERCICIO 1
-let auth = firebase.auth()
-let isLogged = false
+//let auth = firebase.auth()
+//let isLogged = false
 // EJERCICIO 3
-let db = firebase.firestore()
+//let db = firebase.firestore()
 
 //EJERCICIO 4
-let uid
+//let uid
 
 //functions
 // EJERCICIO 1
+/**
 function loginWithGoogle() {
     let provider = new firebase.auth.GoogleAuthProvider()
     auth.signInWithPopup(provider)
@@ -35,8 +36,11 @@ function loginWithGoogle() {
         }) // EJERCICIO 3 - Data Base
         .catch(e => console.log(e))
 }
+ */
+
 
 // EJERCICIO 1
+/**
 function displayProfile({ user }) {
     console.log(user)
     isLogged = true
@@ -48,22 +52,24 @@ function displayProfile({ user }) {
     signupCard.remove()
     container.appendChild(profileCard)
 }
+*/
 
 //EJERCICIO2
-function checkLogin(user) {
-    if (!user) return
-    uid = user.uid
-    //EJERCICIO 4
-    db.collection('users').doc(user.uid).get()
-        .then(docSnap => {
+// function checkLogin(user) {
+//     if (!user) return
+//     uid = user.uid
+//     //     //EJERCICIO 4
+//     //     db.collection('users').doc(user.uid).get()
+//     //         .then(docSnap => {
 
-            displayProfile({ user: docSnap.data() })
+//     displayProfile({ user: docSnap.data() })
 
-        })
+//     //         })
 
-}
+// }
 
 // EJERCICIO 3
+/**
 function saveData(user) {
     db.collection('users').doc(user.uid).get()
         .then(docSnap => {
@@ -78,14 +84,17 @@ function saveData(user) {
 
 
 }
+*/
 
 // EJERCICIO 4 
+/**
 function updateProfile() {
     // must be object
     // Merge the data, no overwrite
     let value = cityInput.value
     db.collection('users').doc(uid).set({ city: value }, { merge: true })
 }
+*/
 
 
 //helpers
@@ -93,12 +102,16 @@ function updateProfile() {
 
 //listeners
 // EJERCICIO 1
+/**
 googleButtons.forEach(b => b.addEventListener('click', loginWithGoogle))
-
+*/
 
 //EJERCICIO 2
+/**
 auth.onAuthStateChanged(checkLogin)
-// start
+ */
 
 // EJERCICIO 4 
+/**
 cityInput.addEventListener('keyup', updateProfile)
+*/
