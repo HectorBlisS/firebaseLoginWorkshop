@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Micro App</title>
+</head>
+
+<body>
+    <section class="container">
+        <article class="login-card">
+            <div>
+                <h2>Inicia Sesión</h2>
+            </div>
+            <div class="buttons">
+                <div class="google-button">
+                    <img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png"
+                        alt="google icon" />
+                    Google
+                </div>
+                <div class="face-button">
+                    <i class="fa fa-facebook-square"></i>
+                    Facebook
+                </div>
+            </div>
+
+            <div class="inputs">
+                <p class="error"></p>
+                <div class="input">
+                    <p>Email</p>
+                    <input id="login-email-input" type="text">
+                </div>
+                <div class="input">
+                    <p>Contraseña <a href="#">¿La olvidaste?</a></p>
+
+                    <input id="login-pass-input" type="password">
+
+                </div>
+            </div>
+            <button class="login-button">Entrar</button>
+            <span>¿No eres miembro? <a class="signup-link" href="#">Registrate aquí</a> </span>
+        </article>
+
+        <!-- Signup -->
+        <article class="signup-card">
+            <div>
+                <h2>Crea tu cuenta</h2>
+            </div>
+            <div class="buttons">
+                <div class="google-button">
+                    <img src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png"
+                        alt="google icon" />
+                    Google
+                </div>
+                <div class="face-button">
+                    <i class="fa fa-facebook-square"></i>
+                    Facebook
+                </div>
+            </div>
+
+            <div class="inputs">
+                <p class="error"></p>
+                <div class="input">
+                    <p>Email</p>
+                    <input id="signup-email-input" type="text">
+                </div>
+                <div class="input">
+                    <p>Contraseña </p>
+                    <input id="signup-pass-input" type="password">
+                </div>
+                <div class="input">
+                    <p>Repite tu contraseña </p>
+                    <input id="signup-pass2-input" type="password">
+                </div>
+            </div>
+            <button class="login-button">Registrarse</button>
+            <span>¿Ya tiees cuenta? <a class="login-link" href="#">Inicia sesión</a> </span>
+        </article>
+
+        <!-- Profile -->
+        <article class="profile-card">
+            <img id="photoURL" src="https://miro.medium.com/fit/c/256/256/0*jp3IFb08Sy3_k3N_." alt="bliss user">
+            <p id="email">contacto@fixter.org</p>
+            <h2 id="displayName">Héctor BlisS</h2>
+            <button class="login-button">Cerrar sesión</button>
+        </article>
+
+    </section>
+
+
+
+    <script src="main.js"></script>
+    <script src="editme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+
+body, h1, h2, p{
+    margin:0;
+}
+body{
+    height: 100vh;
+    font-family: Avenir;
+}
+a{
+    color:grey;
+    font-size: .7rem;
+}
+span{
+    color:grey;
+    font-size: .7rem;
+}
+
+.container {
+    background-image: url('https://difcuencame.gob.mx/wp-content/uploads/2017/10/instagram-background.jpg');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-card:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.login-card{
+    border-radius: 5px;
+    padding: 50px 50px 20px 50px;
+    background-color: whitesmoke;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.login-card h2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.buttons{
+    display: flex;
+    margin-bottom: 40px;
+}
+.face-button:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.face-button{
+    color: white;
+    padding: 10px 30px;
+    background-color: #3b5998;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.google-button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.google-button:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.google-button{
+    color: black;
+    padding: 10px 30px;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.input{
+    margin-bottom: 10px;
+}
+.input p{
+    font-weight: bolder;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+.input input{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color:grey;
+    font-size: 1.1rem;
+    
+}
+.input a{
+    color:grey;
+    font-size: .7rem;
+}
+.login-button:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.login-button{
+    transition:all .3s ease;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+/* Signup */
+.signup-card{
+    border-radius: 5px;
+    padding: 50px 50px 20px 50px;
+    background-color: whitesmoke;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.signup-card h2{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.error{
+    color:red;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+/* Profile */
+.profile-card{
+    border-radius: 5px;
+    padding: 50px 50px 0px 50px;
+    background-color: whitesmoke;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.profile-card > img{
+    border-radius:50%;
+    width:150px; 
+    margin-bottom: 20px;
+}
+
+.profile-card >p {
+    margin-bottom: 20px;
+}
+.profile-card >h2{
+    margin-bottom: 30px;
+}
