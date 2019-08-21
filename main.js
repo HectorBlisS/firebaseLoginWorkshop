@@ -14,6 +14,10 @@ let signupPass2Input = document.querySelector("#signup-pass2-input")
 //lnks
 let signupLink = document.querySelector('.signup-link')
 let loginLink = document.querySelector('.login-link')
+//displays
+let email = document.querySelector('#email')
+let photoURL = document.querySelector('#photoURL')
+let displayName = document.querySelector('#displayName')
 //errors
 let errorNodes = document.querySelectorAll('.error')
 //bttons
@@ -60,15 +64,15 @@ function logOut() {
 // listeners
 signupLink.addEventListener('click', toggleCards)
 loginLink.addEventListener('click', toggleCards)
-googleButtons.forEach(b => b.addEventListener('click', e => {
+// googleButtons.forEach(b => b.addEventListener('click', e => {
 
-}))
+// }))
 logoutButton.addEventListener('click', logOut)
 
 // begining
 signupCard.remove()
-loginCard.remove()
-//profileCard.remove()
+//loginCard.remove()
+profileCard.remove()
 
 
 

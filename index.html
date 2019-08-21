@@ -83,16 +83,31 @@
 
         <!-- Profile -->
         <article class="profile-card">
-            <img id="photoURL" src="https://miro.medium.com/fit/c/256/256/0*jp3IFb08Sy3_k3N_." alt="bliss user">
-            <p id="email">contacto@fixter.org</p>
-            <h2 id="displayName">Héctor BlisS</h2>
+            <img id="photoURL" src="https://pbs.twimg.com/profile_images/719587633353986048/U6ub_oiK_400x400.jpg"
+                alt="bliss user">
+            <p id="email">blissito@fixter.org</p>
+            <h2 id="displayName">Polloyon</h2>
             <button class="login-button">Cerrar sesión</button>
         </article>
 
     </section>
 
 
-
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCgEBgWpBbzOAJGuS5pWDIBCAaJ7LUfV88",
+            authDomain: "hackaton-b4fd1.firebaseapp.com",
+            databaseURL: "https://hackaton-b4fd1.firebaseio.com",
+            projectId: "hackaton-b4fd1",
+            storageBucket: "hackaton-b4fd1.appspot.com",
+            messagingSenderId: "360798458585",
+            appId: "1:360798458585:web:06229791d24a303f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="main.js"></script>
     <script src="editme.js"></script>
 </body>
