@@ -170,3 +170,14 @@ span{
 .profile-card >h2{
     margin-bottom: 30px;
 }
+
+.profile-card input{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+}
